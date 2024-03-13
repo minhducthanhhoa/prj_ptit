@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+
+  .navbar {
+    background-color: #ff5722;
+    overflow: hidden;
+    font-size: 14px;
+    padding: 8px 50px; 
+  }
+
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+  }
+
+  .navbar a.logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .navbar a:hover {
+    background-color: #dd4814;
+    color: white;
+  }
+
+  .search-container {
+    float: left;
+    padding-left: 25px;
+  }
+
+  input[type=text] {
+    padding: 7px;
+    border: none;
+    width: 300px; 
+  }
+
+  .search-container button {
+    padding: 7px;
+    background: #f2f2f2;
+    color: #ff5722;
+    border: none;
+    cursor: pointer;
+  }
+
+  .search-container button:hover {
+    background: #e6e6e6;
+  }
+
+  .navbar-right {
+    float: right;
+  }
+
+  .navbar-right a {
+    padding: 8px 15px;
+    margin-left: 5px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #ff5722;
+    border: 1px solid #ff5722;
+    transition: all 0.3s;
+  }
+
+  .navbar-right a:hover {
+    background-color: #ff5722;
+    color: #ffffff;
+  }
+
+  @media screen and (max-width: 600px) {
+    .navbar a, .navbar-right a {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 10px;
+    }
+
+    .search-container {
+      float: none;
+      width: auto;
+    }
+
+    input[type=text] {
+      width: 100%; 
+    }
+
+    .search-container button {
+      width: 100%;
+    }
+  }
+
+  .category-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px; 
+    margin: auto;
+    padding: 20px;
+    background-color: #fff; 
+  }
+
+  .category {
+    width: 23%; 
+    margin-bottom: 20px; 
+    text-align: center; 
+  }
+
+  .category img {
+    width: 300px; 
+    height: 300px; 
+    border-radius: 50%; 
+    margin-bottom: 10px; 
+  }
+
+  .category-title {
+    display: block;
+    font-size: 16px;
+    color: #333; 
+    text-decoration: none; 
+  }
+
+  @media screen and (max-width: 768px) {
+    .category {
+      width: 45%; 
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .category {
+      width: 90%; 
+    }
+  }
